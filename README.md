@@ -23,7 +23,7 @@ Software Engineer specialized in **Data Engineering**, currently completing a Ma
 
 * 🎯 **Contract Search:** Data Engineering Apprenticeship (12 or 24 months) • Available immediately • Île-de-France / Hybrid
 * 🌱 **Current Deep-Dive:** dbt Core, Apache Airflow 3, Databricks Unity Catalog & Agentic Databases (Ghost)
-* 🤝 **Product & Squad Synergy:** Proven delivery with Product & Marketing teams (e.g. E-Commerce Analytics Platform — GA4 ➔ BigQuery ➔ Looker Studio for Grace & Mila)
+* 🤝 **Product & Squad Synergy:** Cross-functional delivery with Product & Marketing squads (E-Commerce Analytics Platform — GA4 ➔ BigQuery ➔ Looker Studio [Private / NDA])
 * 💬 **Ask me about:** PySpark, Medallion Architecture, dbt incremental models, Kafka KRaft, Docker, DataOps
 
 ---
