@@ -68,7 +68,7 @@ Software Engineer turned Data Engineer, currently pursuing a Master's in Data & 
 </p>
 
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=ayoub-azacri&bg_color=00000000&color=2ea043&line=2ea043&point=c9d1d9&area=true&hide_border=true" alt="activity graph" />
+  <img src="https://streak-stats.demolab.com/?user=ayoub-azacri&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
