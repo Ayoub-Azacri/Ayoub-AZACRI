@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2ea043&center=true&vCenter=true&width=750&height=40&lines=Data%20Engineer%20%7C%20Lakehouse%20%26%20Streaming;Databricks%20%E2%80%A2%20Apache%20Spark%20%E2%80%A2%20dbt%20%E2%80%A2%20Airflow%20%E2%80%A2%20Kafka" alt="Typing headlines" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2ea043&center=true&vCenter=true&width=750&height=40&lines=Data%20Engineer%20%7C%20Lakehouse%20%26%20Streaming;Databricks%20%E2%80%A2%20Apache%20Spark%20%E2%80%A2%20dbt%20%E2%80%A2%20Airflow%20%E2%80%A2%20Kafka;Software%20Craftsmanship%20Applied%20to%20Data" alt="Typing headlines" />
 </p>
 
 <p align="center">
@@ -19,52 +19,69 @@
 
 ### 🚀 About Me
 
-Software Engineer turned Data Engineer, currently pursuing a Master's in Data & AI at **HETIC** (Paris). I apply Software Craftsmanship rigor (Clean Code, TDD, CI/CD) to build scalable Lakehouse architectures and real-time streaming pipelines.
+Software Engineer specialized in **Data Engineering**, currently completing a Master's in Data & AI at **HETIC** (Paris). I apply Software Craftsmanship principles (**OOP, Clean Code, TDD, CI/CD**) to design distributed, resilient, and production-ready Lakehouse and real-time streaming architectures.
 
-- 🔭 **Featured Production Projects:**
-  - **[Retail Lakehouse](https://github.com/ayoub-azacri)**: PostgreSQL CDC → Databricks Delta Lake → dbt Core (Medallion, SCD2) → Airflow 3 orchestration.
-  - **[Music Streaming Real-Time Platform](https://github.com/ayoub-azacri)**: Kafka KRaft (>1k evt/s) → Spark Structured Streaming → MinIO checkpoints + Redis cache (<5ms).
-  - **[Enterprise SQL Data Warehouse](https://github.com/ayoub-azacri)**: Medallion ETL & Kimball Star Schema on 100k+ CRM/ERP records.
-- 🌱 **Currently Learning & Deepening:** dbt Core, Apache Airflow 3, Databricks Unity Catalog & Agentic Databases (Ghost).
-- 💬 **Ask me about:** PySpark, Medallion Architecture, dbt incremental models, Kafka KRaft, Docker, DataOps.
-- ⚡ **Fun fact:** Passionate about swimming, fitness, and turning raw chaotic data into clean gold layers.
+* 🎯 **Contract Search:** Data Engineering Apprenticeship (12 or 24 months) • Available immediately • Île-de-France / Hybrid
+* 🌱 **Current Deep-Dive:** dbt Core, Apache Airflow 3, Databricks Unity Catalog & Agentic Databases (Ghost)
+* 💬 **Ask me about:** PySpark, Medallion Architecture, dbt incremental models, Kafka KRaft, Docker, DataOps
 
 ---
 
-### 🛠️ Data Engineering Tech Stack
+### 🏗️ Pipeline Architecture Blueprint
 
-<p align="left">
-  <!-- Lakehouse & Big Data -->
-  <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Databricks" />
-  <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Spark" />
-  <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" alt="dbt" />
-  <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Airflow" />
-  <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka" />
-  <img src="https://img.shields.io/badge/Delta_Lake-00ADD8?style=for-the-badge&logoColor=white" alt="Delta Lake" />
-  <!-- Languages -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
-  <!-- Storage, Cache & Search -->
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" alt="Elasticsearch" />
-  <img src="https://img.shields.io/badge/Google_BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="BigQuery" />
-  <img src="https://img.shields.io/badge/AWS_S3-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS S3" />
-  <!-- DevOps & Infrastructure -->
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-</p>
+```text
+  [ Sources: CDC / APIs / Events ]
+                │
+                ▼
+  [ INGESTION & STREAMING ] ────► Apache Kafka (KRaft) ──► Spark Structured Streaming
+                │
+                ▼
+  [ STORAGE: MEDALLION LAKEHOUSE ]
+       ├── Bronze (Raw Storage)  : MinIO (S3) / PostgreSQL CDC
+       ├── Silver (Cleaned / OBT): Databricks Delta Lake / PySpark
+       └── Gold   (Business / DM): dbt Core (SCD Type 2, Kimball Star Schema)
+                │
+                ▼
+  [ SERVING & ANALYTICS ] ──────► Redis (<5ms Cache) | Elasticsearch 8 (Hybrid Search) | BigQuery
+                ▲
+                │
+  [ ORCHESTRATION & QUALITY ] ──► Apache Airflow 3 (Dockerized DAGs) + dbt tests + Pytest
+```
 
 ---
 
-### 📊 GitHub Activity & Stats
+### 📂 Featured Production Repositories
+
+| Project | Core Stack | Architecture Highlights | Link |
+| :--- | :--- | :--- | :---: |
+| **Retail Lakehouse** | `Databricks` `dbt Core` `Airflow 3` `PostgreSQL` | Ingestion CDC (100k+ rows) → Silver OBT via Jinja macros → Gold SCD2 snapshots & fact_orders | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/Walmart_Airflow_Dbt_Project) |
+| **Music Streaming Platform** | `Kafka KRaft` `Spark Streaming` `Redis` `MinIO` | Real-time event streaming (>1k evt/s), stateful fraud detection, distributed checkpoints, <5ms cache | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/spotifydata-project) |
+| **Enterprise SQL DWH** | `SQL Server` `T-SQL` `Kimball` | Bronze-Silver-Gold ETL via stored procedures, Star Schema dimensional modeling (-45% query latency) | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/sql-data-warehouse-project) |
+| **CineSearch & RAG Platform** | `Elasticsearch 8` `LangChain` `Docker` | Hybrid search (BM25 + kNN vector embeddings), contextual movie recommendation engine | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/elk-movies-platform) |
+
+---
+
+### 🛠️ Technical Stack Matrix
+
+* **Distributed Engines & Lakehouse:**  
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/dbt_Core-FF694B?style=flat-square&logo=dbt&logoColor=white" /> <img src="https://img.shields.io/badge/Apache_Airflow_3-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" /> <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" /> <img src="https://img.shields.io/badge/Delta_Lake-00ADD8?style=flat-square&logoColor=white" />
+
+* **Databases, Cache & Search:**  
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" /> <img src="https://img.shields.io/badge/Elasticsearch_8-005571?style=flat-square&logo=elasticsearch&logoColor=white" /> <img src="https://img.shields.io/badge/Google_BigQuery-4285F4?style=flat-square&logo=googlecloud&logoColor=white" /> <img src="https://img.shields.io/badge/AWS_S3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" /> <img src="https://img.shields.io/badge/Agentic_DB_(Ghost)-555555?style=flat-square" />
+
+* **Languages & Scripting:**  
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/SQL_(Advanced)-4479A1?style=flat-square&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/T--SQL-CC292B?style=flat-square&logo=microsoftsqlserver&logoColor=white" /> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+
+* **DevOps, Testing & Quality:**  
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" /> <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+
+---
+
+### 📊 GitHub Activity & Metrics
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api?username=ayoub-azacri&show_icons=true&theme=tokyonight&title_color=2ea043&icon_color=2ea043&hide_border=true&bg_color=00000000&count_private=true" alt="stats" />
-  <img height="165" src="https://github-readme-stats-five-sigma-99.vercel.app/api/top-langs/?username=ayoub-azacri&layout=compact&theme=tokyonight&title_color=2ea043&icon_color=2ea043&hide_border=true&bg_color=00000000&langs_count=8" alt="top langs" />
+  <img height="160" src="https://github-readme-stats-five-sigma-99.vercel.app/api?username=ayoub-azacri&show_icons=true&theme=tokyonight&title_color=2ea043&icon_color=2ea043&hide_border=true&bg_color=00000000&count_private=true&hide_rank=true" alt="stats" />
+  <img height="160" src="https://github-readme-stats-five-sigma-99.vercel.app/api/top-langs/?username=ayoub-azacri&layout=compact&theme=tokyonight&title_color=2ea043&icon_color=2ea043&hide_border=true&bg_color=00000000&hide=html,css,javascript" alt="top langs" />
 </p>
 
 <p align="center">
@@ -72,4 +89,4 @@ Software Engineer turned Data Engineer, currently pursuing a Master's in Data & 
 </p>
 
 ---
-<p align="center"><i>⭐️ Engineered with precision by <a href="https://github.com/ayoub-azacri">Ayoub Azacri</a></i></p>
+<p align="center"><i>⭐️ Engineered with Software Craftsmanship by <a href="https://github.com/ayoub-azacri">Ayoub Azacri</a></i></p>
