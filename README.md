@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2ea043&center=true&vCenter=true&width=750&height=40&lines=Data%20Engineer%20%7C%20Lakehouse%20%26%20Streaming;Databricks%20%E2%80%A2%20Apache%20Spark%20%E2%80%A2%20dbt%20%E2%80%A2%20Airflow%20%E2%80%A2%20Kafka;Software%20Craftsmanship%20Applied%20to%20Data" alt="Typing headlines" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=2ea043&center=true&vCenter=true&width=780&height=40&lines=Data%20Engineer%20%7C%20Lakehouse%20%26%20Streaming;Databricks%20%E2%80%A2%20Apache%20Spark%20%E2%80%A2%20dbt%20%E2%80%A2%20Airflow%20%E2%80%A2%20Kafka;Software%20Craftsmanship%20Applied%20to%20Data" alt="Typing headlines" />
 </p>
 
 <p align="center">
@@ -23,6 +23,7 @@ Software Engineer specialized in **Data Engineering**, currently completing a Ma
 
 * 🎯 **Contract Search:** Data Engineering Apprenticeship (12 or 24 months) • Available immediately • Île-de-France / Hybrid
 * 🌱 **Current Deep-Dive:** dbt Core, Apache Airflow 3, Databricks Unity Catalog & Agentic Databases (Ghost)
+* 🤝 **Product & Squad Synergy:** Proven delivery with Product & Marketing teams (e.g. E-Commerce Analytics Platform — GA4 ➔ BigQuery ➔ Looker Studio for Grace & Mila)
 * 💬 **Ask me about:** PySpark, Medallion Architecture, dbt incremental models, Kafka KRaft, Docker, DataOps
 
 ---
@@ -57,7 +58,7 @@ Software Engineer specialized in **Data Engineering**, currently completing a Ma
 | **Retail Lakehouse** | `Databricks` `dbt Core` `Airflow 3` `PostgreSQL` | Ingestion CDC (100k+ rows) → Silver OBT via Jinja macros → Gold SCD2 snapshots & fact_orders | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/Walmart_Airflow_Dbt_Project) |
 | **Music Streaming Platform** | `Kafka KRaft` `Spark Streaming` `Redis` `MinIO` | Real-time event streaming (>1k evt/s), stateful fraud detection, distributed checkpoints, <5ms cache | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/spotifydata-project) |
 | **Enterprise SQL DWH** | `SQL Server` `T-SQL` `Kimball` | Bronze-Silver-Gold ETL via stored procedures, Star Schema dimensional modeling (-45% query latency) | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/sql-data-warehouse-project) |
-| **CineSearch & RAG Platform** | `Elasticsearch 8` `LangChain` `Docker` | Hybrid search (BM25 + kNN vector embeddings), contextual movie recommendation engine | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/elk-movies-platform) |
+| **CineSearch & RAG Platform** | `Elasticsearch 8` `LangChain` `Docker` | Agile Squad Project • Hybrid search (BM25 + kNN vectors), automated Logstash ingestion, movie recommendation RAG engine | [**Inspect Code** ➔](https://github.com/Ayoub-Azacri/elk-movies-platform) |
 
 ---
 
